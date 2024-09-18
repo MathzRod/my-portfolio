@@ -1,0 +1,41 @@
+.main-content{
+    background-color: aqua;
+}
+
+.navbar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: purple;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 12px 12px 0 0;
+    /* box-shadow: ; */
+    z-index: 5;
+}
+
+.navbar-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.navbar-link{
+    color: gray;
+    /* font-size:  ;*/
+    padding: 20px 7px;
+    /* transition: ; */
+}
+
+article{
+    background-color: red;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 15px;
+    /* box-shadow: ; */
+    z-index: 1;
+}
+
