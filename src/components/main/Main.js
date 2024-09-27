@@ -23,9 +23,9 @@ function Main(){
                         <li className='navbar-item'>
                             <button className={`navbar-link ${activeComponent ==='resume' ? 'active': ''}`} onClick={()=> handleSetActiveComponent('resume')}>Resume</button>
                         </li>
-                        <li className='navbar-item'>
+                        {/* <li className='navbar-item'>
                             <button className={`navbar-link ${activeComponent ==='portfolio' ? 'active': ''}`} onClick={()=> handleSetActiveComponent('portfolio')}>Portfolio</button>
-                        </li>
+                        </li> */}
                         <li className='navbar-item'>
                             <button className={`navbar-link ${activeComponent ==='contact' ? 'active': ''}`} onClick={()=> handleSetActiveComponent('contact')}>Contact</button>
                         </li>

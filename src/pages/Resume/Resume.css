@@ -1,0 +1,150 @@
+.article-title{
+    margin-bottom: 30px;
+}
+
+.timeline{
+    margin-bottom: 30px;
+}
+
+.timeline .title-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.icon-box{
+    position: relative;
+    background: red;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: orange;
+    box-shadow: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+    z-index: 1;
+}
+
+.icon-box::before{
+    content: '';
+    position: absolute;
+    inset: 1px;
+    background: black;
+    border-radius: inherit;
+    z-index: -1;
+}
+
+.icon-box IonIcon{
+    --ionicon-stroke-width: 35px;
+}
+
+.timeline-list{
+    font-size: 14px;
+    margin-left: 45px;
+}
+
+.timeline-item{
+    position: relative;
+}
+
+.timeline-item:not(:last-child)::before{
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: -30px;
+    width: 1px;
+    height: calc(100% + 40px);
+    background: green;
+}
+
+.timeline-item::after{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -33px;
+    height: 6px;
+    width: 6px;
+    background-color: aqua;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px hsl(0, 0%, 22%);
+}
+
+.timeline-item:last-child {
+    margin-bottom: 20px;
+}
+
+.timeline-list span{
+    color: yellow;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.timeline-text{
+    color: gray;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* SKILLS */
+
+.skills-title{
+    margin-bottom: 20px;
+}
+
+.skills-list{
+    padding: 20px;
+}
+
+.content-card{
+    position: relative;
+    background: pink;
+    /* padding: 15px;
+    padding-top: 45px; */
+    border-radius: 14px;
+    box-shadow: 0 16px 30px hsla(0, 0%, 0%, 0.25) ;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.content-card:not(:last-child)::before{
+    content: '';
+    position: absolute;
+    inset: 1px;
+    background: rosybrown;
+    border-radius: inherit;
+    z-index: -1;
+}
+
+.skills-item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.skill .title-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 8px;
+}
+
+.skill .title-wrapper data{
+    color: rgb(117, 117, 117);
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.skill-progress-bg{
+    background: black;
+    width: 100%;
+    height: 8px;
+    border-radius: 10px;
+}
+
+.skill-progress-fill{
+    background: orangered;
+    height: 100%;
+    border-radius: inherit;
+    width: 80%;
+}
